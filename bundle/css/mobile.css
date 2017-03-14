@@ -1,0 +1,23 @@
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: url('../images/graphic-78060sm.jpg');
+  background-size: cover;
+  background-color: #433f4a;
+  color: #fff;
+}
+
+.content-container {
+  margin-top: 105px;
+  height: 80%;
+}
+
+.status {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

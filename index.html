@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Demo</title>
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="bundle/css/base.css" />
+  <link rel="stylesheet" media="(max-width: 500px)" href="bundle/css/mobile.css" />
+  <link rel="stylesheet" media="(min-width: 501px)" href="bundle/css/desktop.css" />
+</head>
+<body>
+  <div class="app">
+      <header>
+
+        <!-- Search container -->
+        <div class="search-container">
+          <label for id="searchbox">Search</label>
+          <input type="text" id="searchBox" placeholder="Search query...">
+          <button id="searchButton">Search</button>
+        </div>
+
+        <!-- Result summary -->
+        <div class="summary-container">
+          <div class="align-left">Total results: <span id="result-count">N/A</span></div>
+          <div class="align-right">
+            <i class="material-icons nav" id="nav-prev">chevron_left</i>
+            <span id="page-no">N/A</span>
+            <i class="material-icons nav" id="nav-next">chevron_right</i>
+          </div>
+        </div>
+
+      </header>
+
+      <div class="content-container">
+        <div id="content">
+          <div class="status">
+            Looking for content?<br />
+            Please enter a query above.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+      </div>
+
+      <!-- Stream previews -->
+      <!-- <div class="container list-container">
+
+      </div> -->
+
+  </div>
+<script src="bundle/js/helpers.js"></script>
+<script src="bundle/js/script.js"></script>
+</body>

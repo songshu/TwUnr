@@ -1,0 +1,37 @@
+body {
+  /* Courtesy of pixabay.com */
+  background: url(../images/graphic-78060.jpg);
+  background-size: cover;
+}
+
+header {
+  background-color: #000;
+
+  margin: 0 auto;
+  color: #fff;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.app {
+  margin-top: 1em;
+}
+
+.content-container {
+  display: block;
+  overflow-x: none;
+  overflow-y: scroll;
+  height: 80%;
+  background: #fff;
+  border: 0 1px 1px 1px;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.summary-container {
+  border-top: 1px solid black;
+}
+
+.status {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
