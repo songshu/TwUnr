@@ -11,7 +11,7 @@ window.onload = function() {
   var endPoint = '/search/channels';
   var statusBarVisible = true;
 
-  const pageSize = 10;     //X results per page.
+  const pageSize = 50;     //X results per page.
   var pageNo = 1;           //Current page number.
   var pageCount = 0;        //Default.
   var query = "";           //Query term.
