@@ -5,3 +5,5 @@ Ensure that you specify your Twitch Client ID inside bundle/js/script.js on line
 
 ### Preview:
 ![Preview Screenshot](docs/preview.jpg)
+
+[Demo link](http://myidata.com/demos/TwUnr/)
