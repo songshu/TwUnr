@@ -1,7 +1,7 @@
 window.onload = function() {
 
   //*** Configuration section starts. ***
-  var clientId = '';    //Enter your own clientId here.
+  var clientId = '99xuwzg5428j9y87bwp2lcl3qd8i6y';    //Enter your own clientId here.
   //*** Configuration section ends - do not modify any code below.
 
   //****************************************************************************
@@ -11,7 +11,7 @@ window.onload = function() {
   var endPoint = '/search/channels';
   var statusBarVisible = true;
 
-  const pageSize = 50;     //X results per page.
+  const pageSize = 10;     //X results per page.
   var pageNo = 1;           //Current page number.
   var pageCount = 0;        //Default.
   var query = "";           //Query term.
@@ -75,12 +75,8 @@ window.onload = function() {
 
   //updateHeader(): updates header & nav info.
   var updateHeader = function(data) {
-    pageCount = parseInt(data['total_results'] / pageSize);
+    pageCount = Math.ceil(data['total_results'] / pageSize);
     pageNo = data['page_no'];
-
-    if (data['total_results'] > (pageCount * pageSize))          //Account for incomplete extra page of results.
-      pageCount++;
-
     document.getElementById('result-count').innerHTML = data['total_results'];
     document.getElementById('page-no').innerHTML = pageNo + ' / ' + pageCount;
   };
