@@ -1,7 +1,7 @@
 window.onload = function() {
 
   //*** Configuration section starts. ***
-  var clientId = '99xuwzg5428j9y87bwp2lcl3qd8i6y';    //Enter your own clientId here.
+  var clientId = '';    //Enter your own clientId here.
   //*** Configuration section ends - do not modify any code below.
 
   //****************************************************************************
