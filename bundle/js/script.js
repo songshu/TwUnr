@@ -104,8 +104,19 @@ window.onload = function() {
       query = document.getElementById('searchBox').value;     //Updates parent query var.
       runSearch(query, pageNo);
     });
-
   };
+
+
+  //setupSearchInput(): adds <enter> support for search input field.
+  var setupSearchInput = function() {
+    document.getElementById('searchBox').addEventListener('keypress', function(e) {
+      var key = e.which || e.keyCode;
+
+      if (key === 13) {
+        document.getElementById('searchButton').click();  //Trigger SearchButton click.
+      }
+    });
+  }
 
 
   //setupNav(): sets up navigation buttons via event bubbling on summary-container.
@@ -123,6 +134,7 @@ window.onload = function() {
   //Startup.
   (function() {
     setupSearchButton();
+    setupSearchInput();
     setupNav();
   })();
 
